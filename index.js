@@ -1,5 +1,5 @@
 /**
- * Don't change these constants! 
+ * Don't change these constants!
     // no, left is A and right is D.
  */
 const DODGER = document.getElementById('dodger')
