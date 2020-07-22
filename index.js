@@ -18,7 +18,7 @@ var rightFrame = positionToInteger($("#game").css("width"));
 function checkCollision(rock) {
   var top = positionToInteger(rock.style.top)
 
-// GAME_HEIGHT - 20 - 20 = 360px;
+  // GAME_HEIGHT - 20 - 20 = 360px;
   if (top > 360) {
     var rockLeftEdge = positionToInteger(rock.style.left)
     var rockRightEdge = rockLeftEdge + positionToInteger($('.rock').css("width"));
