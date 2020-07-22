@@ -34,7 +34,7 @@ function checkCollision(rock) {
 function createRock(x) {
   const rock = document.createElement('div')
 
-  rock.className = 'rock'
+  rock.className = 'rock' //...does this get pushed over there?
   rock.style.left = `${x}px`
 
   var top = 0
