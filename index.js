@@ -26,7 +26,7 @@ function checkCollision(rock) {
 
     // FIXME: The rock is 20 pixel's wide -- how do we get the right edge?
 
-    var rockRightEdge = rockLeftEdge + ;
+    var rockRightEdge = rockLeftEdge + positionToInteger($('.rock').css("width"));
 
     if (false /* Think about it -- what's happening here?
                * There's been a collision if one of three things is true:
