@@ -106,19 +106,16 @@ function moveDodger(e) {
 }
 
 function moveDodgerLeft() {
-  console.log("moving left");
-
   window.requestAnimationFrame(()=>{
-    //DODGER.style.left= `${leftEdge - 5}px`;
-    DODGER.style.left= `${positionToInteger(DODGER.style.left) - 5}px`;
+    DODGER.style.left= `${leftEdge - 5}px`;
+    leftEdge -= 5;
+    //DODGER.style.left= `${positionToInteger(DODGER.style.left) - 5}px`;
     // copied this off of Erro-95. I'm not sure why it works.
     // obviously it has something to do with when things are called since i saw it before. i have no idea when things are called in javascript though, and wouldn't know where to begin to look. this seems moderately more important than offhanding recursion at the last minute, but I don't know things.
   })
 }
 
 function moveDodgerRight() {
-  console.log("moving right");
-
   window.requestAnimationFrame(()=>{
     DODGER.style.left= `${leftEdge + 5}px`;
   })
