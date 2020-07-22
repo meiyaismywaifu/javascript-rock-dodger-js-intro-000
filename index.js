@@ -118,6 +118,11 @@ function endGame() {
 }
 
 function moveDodger(e) {
+  if (e.which === 65 && leftEdge > 0){
+    moveDodgerLeft();
+  } else if (e.which === 68 && rightEdge < rightFrame){
+    moveDodgerRight();
+  }
   // implement me!
   /**
    * This function should call `moveDodgerLeft()`
@@ -127,31 +132,26 @@ function moveDodger(e) {
    * And be sure to use the functions declared below!
       // why is this written so differently from all the other ones?
    */
-   if (e.which === 65 && leftEdge > 0){
-     moveDodgerLeft();
-   } else if (e.which === 68 && rightEdge < rightFrame){
-     moveDodgerRight();
-   }
 }
 
 function moveDodgerLeft() {
+  console.log("moving left");
+  dodger.style.left= `${leftEdge - 5}px`;
   // implement me!
   /**
    * This function should move DODGER to the left
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
-   console.log("moving left");
-   dodger.style.left= `${leftEdge - 5}px`;
 }
 
 function moveDodgerRight() {
+  console.log("moving right");
+  dodger.style.left= `${leftEdge + 5}px`;
   // implement me!
   /**
    * This function should move DODGER to the right
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
-   console.log("moving right");
-   dodger.style.left= `${leftEdge + 5}px`;
 }
 
 /**
