@@ -47,7 +47,7 @@ function createRock(x) {
 
     if (checkCollision(rock)){ // WHY WOULD THESE BE UNDER "moveRock"???
       return endGame()
-    } else if (){
+    } else if (rock.style.top < GAME_HEIGHT){
 
     } else {
 
