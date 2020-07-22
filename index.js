@@ -24,27 +24,6 @@ var gameInterval = null
  // leftFrame is unnecessary
  var rightFrame = parseInt($("#game").css("width").replace('px',''), 10);
 
- document.addEventListener('keydown', (e)=>{
-   // stuff doesn't move if i put this outside.
-   // doesn't matter that it has to be outside other than console inspection.
-   var dodger = document.getElementById('dodger');
-
-
-     // "dodger.style.right" gives null value, doesn't autocalc.
-
-
-   if (e.which === 65 && leftEdge > 0){
-     console.log("moving left");
-     dodger.style.left= `${leftEdge - 5}px`;
-   } else if (e.which === 68 && rightEdge < rightFrame){
-     console.log("moving right");
-     dodger.style.left= `${leftEdge + 5}px`;
-   }
- })
-
-
-
-
 function checkCollision(rock) {
   // implement me!
   // use the comments below to guide you!
@@ -148,6 +127,12 @@ function moveDodger(e) {
    * And be sure to use the functions declared below!
       // why is this written so differently from all the other ones?
    */
+   if (e.which === 65 && leftEdge > 0){
+     
+     
+   } else if (e.which === 68 && rightEdge < rightFrame){
+     
+   }
 }
 
 function moveDodgerLeft() {
@@ -156,6 +141,8 @@ function moveDodgerLeft() {
    * This function should move DODGER to the left
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
+   console.log("moving left");
+   dodger.style.left= `${leftEdge - 5}px`;
 }
 
 function moveDodgerRight() {
@@ -164,6 +151,8 @@ function moveDodgerRight() {
    * This function should move DODGER to the right
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
+   console.log("moving right");
+   dodger.style.left= `${leftEdge + 5}px`;
 }
 
 /**
