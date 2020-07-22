@@ -33,6 +33,7 @@ function checkCollision(rock) {
   // rocks are 20px high
   // DODGER is 20px high
   // GAME_HEIGHT - 20 - 20 = 360px;
+    // why isn't this called or otherwise connected to the CSS
   if (top > 360) {
     const dodgerLeftEdge = positionToInteger(DODGER.style.left)
 
