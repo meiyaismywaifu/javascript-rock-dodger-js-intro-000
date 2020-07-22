@@ -52,22 +52,9 @@ function createRock(x) {
     } else {
       rock.remove();
     }
-    /* If a rock collides with the DODGER,
-     * we should call endGame().
-     */
-
-    /* Otherwise, if the rock hasn't reached the bottom of
-     * the GAME, we want to move it again.
-     */
-
-    /*
-     * But if the rock *has* reached the bottom of the GAME,
-     * we should remove the rock from the DOM.
-     */
   }
 
-  // We should kick off the animation of the rock around here.
-
+  window.requestAnimationFrame(moveRock) // apparently initial movement.
   // Add the rock to ROCKS so that we can remove all rocks
   // when there's a collision.
   ROCKS.push(rock)
