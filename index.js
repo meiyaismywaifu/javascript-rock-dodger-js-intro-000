@@ -23,7 +23,7 @@ function checkCollision(rock) {
     var rockLeftEdge = positionToInteger(rock.style.left)
     var rockRightEdge = rockLeftEdge + positionToInteger($('.rock').css("width"));
 
-    if ( rockLeftEdge <= rightEdge && rockRIghtEdge >= leftEdge
+    if ( rockLeftEdge <= rightEdge && rockRightEdge >= leftEdge
       /* Think about it -- what's happening here?
                * There's been a collision if one of three things is true:
                * 1. The rock's left edge is < the DODGER's left edge,
