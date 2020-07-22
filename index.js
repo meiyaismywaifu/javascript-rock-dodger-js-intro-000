@@ -18,11 +18,11 @@ var gameInterval = null
  * but all of your work should happen below.
  */
 
-var width = $('#dodger').css("width").replace('px','');
-//var width = parseInt($('#dodger').css("width").replace('px',''), 10);
+// apparently they didn't include JQ for me, so i did that.
+var width = parseInt($('#dodger').css("width").replace('px',''), 10);
 var leftEdge = parseInt(dodger.style.left.replace('px',''), 10)
 var rightEdge = leftEdge + width;
-//var rightFrame = parseInt($("#game").css("width").replace('px',''), 10);
+var rightFrame = parseInt($("#game").css("width").replace('px',''), 10);
 
 function checkCollision(rock) {
   // implement me!
