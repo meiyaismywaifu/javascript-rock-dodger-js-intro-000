@@ -25,8 +25,8 @@ var rightFrame = parseInt($("#game").css("width").replace('px',''), 10);
 function checkCollision(rock) {
   // implement me!
   // use the comments below to guide you!
-    // why is this here before the movement of the dodger
-    // or for that matter, before the definition of the rock
+    // why is this here before the movement of the dodger?
+    // or for that matter, before the definition of the rock?
   const top = positionToInteger(rock.style.top)
 
   // rocks are 20px high
