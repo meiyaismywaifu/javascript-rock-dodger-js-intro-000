@@ -1,6 +1,6 @@
 const DODGER = document.getElementById('dodger')
 const GAME = document.getElementById('game')
-const GAME_HEIGHT = 400
+const GAME_HEIGHT = positionToInteger($("#game").css("height"))
 const GAME_WIDTH = 400
 const LEFT_ARROW = 65
 const RIGHT_ARROW = 68
