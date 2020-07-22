@@ -108,14 +108,14 @@ function moveDodger(e) {
 function moveDodgerLeft() {
   window.requestAnimationFrame(()=>{
     DODGER.style.left= `${leftEdge - 5}px`;
-    leftEdge -=5;
+    leftEdge -=5; rightEdge -=5;
   })
 }
 
 function moveDodgerRight() {
   window.requestAnimationFrame(()=>{
     DODGER.style.left= `${leftEdge + 5}px`;
-    leftEdge +=5;
+    leftEdge +=5; rightEdge +=5;
   })
 }
 
