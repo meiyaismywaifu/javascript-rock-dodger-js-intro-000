@@ -55,11 +55,8 @@ function createRock(x) {
   }
 
   window.requestAnimationFrame(moveRock) // apparently initial movement.
-  // Add the rock to ROCKS so that we can remove all rocks
-  // when there's a collision.
   ROCKS.push(rock)
 
-  // Finally, return the rock element you've created.
   return rock
 }
 
@@ -69,6 +66,10 @@ function createRock(x) {
  * Finally, alert "YOU LOSE!" to the player.
  */
 function endGame() {
+  gameInterval = null;
+  ROCKS.forEach(rock =>{
+    rock.remove()
+  })
 }
 
 function moveDodger(e) {
