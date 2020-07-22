@@ -38,16 +38,16 @@ function createRock(x) {
   rock.style.left = `${x}px`
 
   var top = 0
-
   rock.style.top = top
 
   GAME.appendChild(rock);
-
 
   /* This function moves the rock. (2 pixels at a time
    * seems like a good pace.)
    */
   function moveRock() {
+    rock.style.top = `${top += 2}px`;
+    
     /* If a rock collides with the DODGER,
      * we should call endGame().
      */
