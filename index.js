@@ -98,11 +98,8 @@ function endGame() {
 }
 
 function moveDodger(e) {
-  if (e.which === LEFT_ARROW && leftEdge > 0){
-    moveDodgerLeft();
-  } else if (e.which === RIGHT_ARROW && rightEdge < rightFrame){
-    moveDodgerRight();
-  }
+  if (e.which === LEFT_ARROW && leftEdge > 0){moveDodgerLeft();}
+  else if (e.which === RIGHT_ARROW && rightEdge < rightFrame){moveDodgerRight();}
 }
 
 function moveDodgerLeft() {
