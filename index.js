@@ -11,11 +11,9 @@ var gameInterval = null
 
 // apparently they didn't include JQ for me, so i did that.
 var width = positionToInteger($('#dodger').css("width"));
-// parseInt($('#dodger').css("width").replace('px',''), 10);
 var leftEdge = positionToInteger(DODGER.style.left);
-//parseInt(DODGER.style.left.replace('px',''), 10)
 var rightEdge = leftEdge + width;
-var rightFrame = parseInt($("#game").css("width").replace('px',''), 10);
+var rightFrame = positionToInteger($("#game").css("width"));
 
 function checkCollision(rock) {
   const top = positionToInteger(rock.style.top)
