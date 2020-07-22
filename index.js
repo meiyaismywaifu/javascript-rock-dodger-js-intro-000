@@ -18,6 +18,33 @@ var gameInterval = null
  * but all of your work should happen below.
  */
 
+ var width = parseInt($("#dodger").css("width").replace('px',''), 10); // for some reason "dodger.style.width" doesn't access it.
+ var leftEdge = parseInt(dodger.style.left.replace('px',''), 10)
+ var rightEdge = leftEdge + width;
+ // leftFrame is unnecessary
+ var rightFrame = parseInt($("#game").css("width").replace('px',''), 10);
+
+ document.addEventListener('keydown', (e)=>{
+   // stuff doesn't move if i put this outside.
+   // doesn't matter that it has to be outside other than console inspection.
+   var dodger = document.getElementById('dodger');
+   
+     
+     // "dodger.style.right" gives null value, doesn't autocalc.
+
+ 
+   if (e.which === 65 && leftEdge > 0){
+     console.log("moving left");
+     dodger.style.left= `${leftEdge - 5}px`;
+   } else if (e.which === 68 && rightEdge < rightFrame){
+     console.log("moving right");
+     dodger.style.left= `${leftEdge + 5}px`;
+   }
+ })
+
+
+ 
+
 function checkCollision(rock) {
   // implement me!
   // use the comments below to guide you!
