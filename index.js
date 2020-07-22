@@ -49,9 +49,9 @@ function createRock(x) {
     rock.style.top = `${top += 2}px`;
 
     if (){
-      
+
     } else if (){
-      
+
     } else {
 
     }
