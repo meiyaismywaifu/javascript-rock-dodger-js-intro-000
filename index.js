@@ -163,7 +163,7 @@ function positionToInteger(p) {
 }
 
 function start() { // why is this at the bottom
-  window.addEventListener('keydown', moveDodger) 
+  window.addEventListener('keydown', moveDodger)
 
   START.style.display = 'none'
 
