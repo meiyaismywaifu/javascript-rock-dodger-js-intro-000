@@ -136,7 +136,7 @@ function moveDodger(e) {
 
 function moveDodgerLeft() {
   console.log("moving left");
-  dodger.style.left= `${leftEdge - 5}px`;
+  DODGER.style.left= `${leftEdge - 5}px`;
   // implement me!
   /**
    * This function should move DODGER to the left
@@ -146,7 +146,7 @@ function moveDodgerLeft() {
 
 function moveDodgerRight() {
   console.log("moving right");
-  dodger.style.left= `${leftEdge + 5}px`;
+  DODGER.style.left= `${leftEdge + 5}px`;
   // implement me!
   /**
    * This function should move DODGER to the right
