@@ -108,7 +108,7 @@ function moveDodger(e) {
 function moveDodgerLeft() {
   window.requestAnimationFrame(()=>{
     DODGER.style.left= `${leftEdge - 5}px`;
-    leftEdge -=5; rightEdge -=5;
+    leftEdge -=5; rightEdge -=5; // i really do not know what is synchronous and what isn't.
   })
 }
 
