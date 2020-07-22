@@ -45,7 +45,7 @@ function createRock(x) {
   function moveRock() { // why is this under "createRock"?
     rock.style.top = `${top += 2}px`;
 
-    if (){ // WHY WOULD THESE BE UNDER "moveRock"???
+    if (checkCollision(rock)){ // WHY WOULD THESE BE UNDER "moveRock"???
 
     } else if (){
 
