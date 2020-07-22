@@ -117,10 +117,6 @@ function moveDodgerRight() {
     DODGER.style.left= `${leftEdge + 5}px`;
     leftEdge +=5;
   })
-
-  /* This function should move DODGER to the right
-   * (mabye 4 pixels?). Use window.requestAnimationFrame()!
-   */
 }
 
 /**
