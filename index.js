@@ -42,13 +42,10 @@ function createRock(x) {
 
   GAME.appendChild(rock);
 
-  /* This function moves the rock. (2 pixels at a time
-   * seems like a good pace.)
-   */
-  function moveRock() {
+  function moveRock() { // why is this under "createRock"?
     rock.style.top = `${top += 2}px`;
 
-    if (){
+    if (){ // WHY WOULD THESE BE UNDER "moveRock"???
 
     } else if (){
 
