@@ -18,6 +18,7 @@ var gameInterval = null
  * but all of your work should happen below.
  */
 
+var width = $('#dodger').css("width").replace('px','');
 //var width = parseInt($('#dodger').css("width").replace('px',''), 10);
 var leftEdge = parseInt(dodger.style.left.replace('px',''), 10)
 var rightEdge = leftEdge + width;
