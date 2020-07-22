@@ -128,10 +128,9 @@ function moveDodger(e) {
       // why is this written so differently from all the other ones?
    */
    if (e.which === 65 && leftEdge > 0){
-
-
+     moveDodgerLeft();
    } else if (e.which === 68 && rightEdge < rightFrame){
-
+     moveDodgerRight();
    }
 }
 
