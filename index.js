@@ -48,6 +48,13 @@ function createRock(x) {
   function moveRock() {
     rock.style.top = `${top += 2}px`;
 
+    if (){
+      
+    } else if (){
+      
+    } else {
+
+    }
     /* If a rock collides with the DODGER,
      * we should call endGame().
      */
