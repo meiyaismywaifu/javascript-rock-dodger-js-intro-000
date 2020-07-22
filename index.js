@@ -18,9 +18,9 @@ var rightFrame = positionToInteger($("#game").css("width"));
 function checkCollision(rock) {
   const top = positionToInteger(rock.style.top)
 
-  // rocks are 20px high
-  // DODGER is 20px high
-  // GAME_HEIGHT - 20 - 20 = 360px;
+// rocks are 20px high
+// DODGER is 20px high
+// GAME_HEIGHT - 20 - 20 = 360px;
   if (top > 360) {
     const dodgerLeftEdge = positionToInteger(DODGER.style.left)
 
@@ -109,7 +109,6 @@ function moveDodgerLeft() {
     // i really do not know what is synchronous and what isn't.
   })
 }
-
 function moveDodgerRight() {
   window.requestAnimationFrame(()=>{
     DODGER.style.left= `${leftEdge + 5}px`;
