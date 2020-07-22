@@ -32,8 +32,7 @@ function checkCollision(rock) {
     // FIXME: The rock is 20 pixel's wide -- how do we get the right edge?
     const rockRightEdge = 0;
 
-    if (false /**
-               * Think about it -- what's happening here?
+    if (false /* Think about it -- what's happening here?
                * There's been a collision if one of three things is true:
                * 1. The rock's left edge is < the DODGER's left edge,
                *    and the rock's right edge is > the DODGER's left edge;
@@ -57,24 +56,20 @@ function createRock(x) {
 
   rock.style.top = top
 
-  /**
-   * Now that we have a rock, we'll need to append
+  /* Now that we have a rock, we'll need to append
    * it to GAME and move it downwards.
    */
 
 
-  /**
-   * This function moves the rock. (2 pixels at a time
+  /* This function moves the rock. (2 pixels at a time
    * seems like a good pace.)
    */
   function moveRock() {
-    /*
-     * If a rock collides with the DODGER,
+    /* If a rock collides with the DODGER,
      * we should call endGame().
      */
 
-    /*
-     * Otherwise, if the rock hasn't reached the bottom of
+    /* Otherwise, if the rock hasn't reached the bottom of
      * the GAME, we want to move it again.
      */
 
@@ -94,8 +89,7 @@ function createRock(x) {
   return rock
 }
 
-/**
- * End the game by clearing `gameInterval`,
+/* End the game by clearing `gameInterval`,
  * removing all ROCKS from the DOM,
  * and removing the `moveDodger` event listener.
  * Finally, alert "YOU LOSE!" to the player.
@@ -114,9 +108,7 @@ function moveDodger(e) {
 function moveDodgerLeft() {
   console.log("moving left");
   DODGER.style.left= `${leftEdge - 5}px`;
-  // implement me!
-  /**
-   * This function should move DODGER to the left
+  /* This function should move DODGER to the left
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
 }
@@ -124,9 +116,7 @@ function moveDodgerLeft() {
 function moveDodgerRight() {
   console.log("moving right");
   DODGER.style.left= `${leftEdge + 5}px`;
-  // implement me!
-  /**
-   * This function should move DODGER to the right
+  /* This function should move DODGER to the right
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
 }
