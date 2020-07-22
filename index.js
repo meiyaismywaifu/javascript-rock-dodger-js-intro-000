@@ -119,6 +119,7 @@ function moveDodger(e) {
    * if the right arrow is pressed. (Check the constants
    * we've declared for you above.)
    * And be sure to use the functions declared below!
+      // why is this written so differently from all the other ones?
    */
 }
 
