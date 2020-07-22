@@ -18,10 +18,10 @@ var gameInterval = null
  * but all of your work should happen below.
  */
 
-var width = parseInt($('#dodger').css("width").replace('px',''), 10);
+//var width = parseInt($('#dodger').css("width").replace('px',''), 10);
 var leftEdge = parseInt(dodger.style.left.replace('px',''), 10)
 var rightEdge = leftEdge + width;
-var rightFrame = parseInt($("#game").css("width").replace('px',''), 10);
+//var rightFrame = parseInt($("#game").css("width").replace('px',''), 10);
 
 function checkCollision(rock) {
   // implement me!
