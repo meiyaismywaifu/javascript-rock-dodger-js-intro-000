@@ -48,9 +48,9 @@ function createRock(x) {
     if (checkCollision(rock)){ // WHY WOULD THESE BE UNDER "moveRock"???
       return endGame()
     } else if (rock.style.top < GAME_HEIGHT){
-        window.requestAnimationFrame(moveRock);
+      window.requestAnimationFrame(moveRock);
     } else {
-
+      rock.remove();
     }
     /* If a rock collides with the DODGER,
      * we should call endGame().
