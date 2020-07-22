@@ -28,11 +28,11 @@ var gameInterval = null
    // stuff doesn't move if i put this outside.
    // doesn't matter that it has to be outside other than console inspection.
    var dodger = document.getElementById('dodger');
-   
-     
+
+
      // "dodger.style.right" gives null value, doesn't autocalc.
 
- 
+
    if (e.which === 65 && leftEdge > 0){
      console.log("moving left");
      dodger.style.left= `${leftEdge - 5}px`;
@@ -43,7 +43,7 @@ var gameInterval = null
  })
 
 
- 
+
 
 function checkCollision(rock) {
   // implement me!
