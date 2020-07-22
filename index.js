@@ -1,7 +1,3 @@
-/**
- * Don't change these constants!
-    // no, left is A and right is D.
- */
 const DODGER = document.getElementById('dodger')
 const GAME = document.getElementById('game')
 const GAME_HEIGHT = 400
@@ -13,11 +9,6 @@ const START = document.getElementById('start')
 
 var gameInterval = null
 
-/**
- * Be aware of what's above this line,
- * but all of your work should happen below.
- */
-
 // apparently they didn't include JQ for me, so i did that.
 var width = parseInt($('#dodger').css("width").replace('px',''), 10);
 var leftEdge = parseInt(dodger.style.left.replace('px',''), 10)
@@ -25,8 +16,6 @@ var rightEdge = leftEdge + width;
 var rightFrame = parseInt($("#game").css("width").replace('px',''), 10);
 
 function checkCollision(rock) {
-  // implement me!
-  // use the comments below to guide you!
   const top = positionToInteger(rock.style.top)
 
   // rocks are 20px high
@@ -64,7 +53,6 @@ function createRock(x) {
   rock.className = 'rock'
   rock.style.left = `${x}px`
 
-  // Hmmm, why would we have used `var` here?
   var top = 0
 
   rock.style.top = top
@@ -80,19 +68,17 @@ function createRock(x) {
    * seems like a good pace.)
    */
   function moveRock() {
-    // implement me!
-    // (use the comments below to guide you!)
-    /**
+    /*
      * If a rock collides with the DODGER,
      * we should call endGame().
      */
 
-    /**
+    /*
      * Otherwise, if the rock hasn't reached the bottom of
      * the GAME, we want to move it again.
      */
 
-    /**
+    /*
      * But if the rock *has* reached the bottom of the GAME,
      * we should remove the rock from the DOM.
      */
@@ -123,15 +109,6 @@ function moveDodger(e) {
   } else if (e.which === 68 && rightEdge < rightFrame){
     moveDodgerRight();
   }
-  // implement me!
-  /**
-   * This function should call `moveDodgerLeft()`
-   * if the left arrow is pressed and `moveDodgerRight()`
-   * if the right arrow is pressed. (Check the constants
-   * we've declared for you above.)
-   * And be sure to use the functions declared below!
-      // why is this written so differently from all the other ones?
-   */
 }
 
 function moveDodgerLeft() {
