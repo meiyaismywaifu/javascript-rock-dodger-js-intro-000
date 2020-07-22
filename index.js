@@ -18,14 +18,9 @@ var rightFrame = positionToInteger($("#game").css("width"));
 function checkCollision(rock) {
   var top = positionToInteger(rock.style.top)
 
-// rocks are 20px high
-// DODGER is 20px high
 // GAME_HEIGHT - 20 - 20 = 360px;
   if (top > 360) {
     var rockLeftEdge = positionToInteger(rock.style.left)
-
-    // FIXME: The rock is 20 pixel's wide -- how do we get the right edge?
-
     var rockRightEdge = rockLeftEdge + positionToInteger($('.rock').css("width"));
 
     if (false /* Think about it -- what's happening here?
