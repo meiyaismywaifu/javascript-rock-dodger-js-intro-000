@@ -25,7 +25,7 @@ function checkCollision(rock) {
     var rockLeftEdge = positionToInteger(rock.style.left)
 
     // FIXME: The rock is 20 pixel's wide -- how do we get the right edge?
-    
+
     var rockRightEdge = rockLeftEdge + ;
 
     if (false /* Think about it -- what's happening here?
