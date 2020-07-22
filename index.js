@@ -111,7 +111,7 @@ function moveDodgerLeft() {
   window.requestAnimationFrame(()=>{
     //DODGER.style.left= `${leftEdge - 5}px`;
     DODGER.style.left= `${positionToInteger(DODGER.style.left) - 5}px`;
-    // copied this off of Erro-95. I'm not sure why it works. obviously it has something to do with when things are called since i saw it before.
+    // copied this off of Erro-95. I'm not sure why it works. obviously it has something to do with when things are called since i saw it before. i have no idea when things are called in javascript though, and wouldn't know where to begin to look.
   })
   /* This function should move DODGER to the left
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
