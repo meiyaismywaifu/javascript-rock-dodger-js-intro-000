@@ -10,7 +10,8 @@ const START = document.getElementById('start')
 var gameInterval = null
 
 // apparently they didn't include JQ for me, so i did that.
-var width = parseInt($('#dodger').css("width").replace('px',''), 10);
+var width = positionToInteger($('#dodger').css("width"));
+// parseInt($('#dodger').css("width").replace('px',''), 10);
 var leftEdge = positionToInteger(DODGER.style.left);
 //parseInt(DODGER.style.left.replace('px',''), 10)
 var rightEdge = leftEdge + width;
