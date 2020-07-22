@@ -69,7 +69,7 @@ function endGame() {
   gameInterval = null;
   ROCKS.forEach(rock =>{rock.remove()})
   document.removeEventListener('keydown', moveDodger(e));
-  alert("You Lose");
+  alert("You Lose!");
 }
 
 function moveDodger(e) {
